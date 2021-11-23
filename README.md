@@ -6,6 +6,22 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### npm run server
+this is the script to run the backend json mock server.
+
+steps to set up the server(This is already done)
+1) Install json-server: npm i json-server
+2) in package.json, add this line in scripts
+	"server": "json-server --watch db.json --port 5000"
+3) run script using this command: npm run server
+4) add data in db.json file
+5) access data in server using the link: http://localhost:5000/
+6) to access tasks, we use http://localhost:5000/tasks. because the json object in db.json
+	is a list of tasks
+
+# npm start
+to run the app
+
 ### `yarn start`
 
 Runs the app in the development mode.\
